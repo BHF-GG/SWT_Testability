@@ -9,14 +9,19 @@ namespace ECS.Legacy.classes
 {
     class FakeHeater : IHeater
     {
+        public bool On { get; set; }
+        public bool Off { get; set; }
+
         public void TurnOn()
         {
-            System.Console.WriteLine("Heater is on");
+            On = true;
+            Off = false;
         }
 
         public void TurnOff()
         {
-            System.Console.WriteLine("Heater is off");
+            On = false;
+            Off = true;
         }
 
         public bool RunSelfTest()
@@ -25,4 +30,4 @@ namespace ECS.Legacy.classes
         }
     }
 }
-}
+
