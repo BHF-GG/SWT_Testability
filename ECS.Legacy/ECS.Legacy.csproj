@@ -43,8 +43,6 @@
   <ItemGroup>
     <Compile Include="Application.cs" />
     <Compile Include="classes\ECS.cs" />
-    <Compile Include="classes\FakeHeater.cs" />
-    <Compile Include="classes\FakeTempSensor.cs" />
     <Compile Include="classes\Heater.cs" />
     <Compile Include="Interfaces\IHeater.cs" />
     <Compile Include="Interfaces\ITempSensor.cs" />
